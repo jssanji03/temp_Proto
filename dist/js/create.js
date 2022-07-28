@@ -17,59 +17,43 @@ function addTemplate(e) {
       const trAdd = tableArea.insertRow()
         let str = `
         <tr>
-          <th>
-          <button class="btn btn-sm btn-danger js-delete-Btn" href=""><i class="fas fa-trash-alt"></i></button>
-          </th>
-          <th></th>
-          <td data-th="Lux" class="text-start">
+        <td nowrap> 
+           
+          </td>
+          <td data-th="公司代碼" nowrap> 
             <input type="text" class="form-control form-control-sm">
           </td>
-          <td data-th="AMOUNT">
-            <input type="number" class="form-control form-control-sm js-amount" value="">
+          <td data-th="公司名稱" nowrap>
+            <input type="text" class="form-control form-control-sm">
           </td>
-          <td data-th="AC %">
-            <div class="input-group input-group-sm flex-nowrap">
-              <input type="number" class="form-control">
-              <span class="input-group-text" id="basic-addon2">%</span>
-            </div>
+          <td data-th="統一編號" nowrap> 
+            <input type="text" class="form-control form-control-sm">
           </td>
-          <td data-th="AC">
-            <input type="number" class="form-control form-control-sm js-ac">
+          <td data-th="郵遞區號" nowrap> 
+            <input type="text" class="form-control form-control-sm">
           </td>
-          <td data-th="Rebate %">
-            <div class="input-group input-group-sm flex-nowrap">
-              <input type="number" class="form-control">
-              <span class="input-group-text" id="basic-addon2">%</span>
-            </div>
+          <td data-th="公司地址" nowrap> 
+            <input type="text" class="form-control form-control-sm">
           </td>
-          <td data-th="Rebate">
-            <input type="number" class="form-control form-control-sm">
+          <td data-th="負責人" nowrap> 
+            <input type="text" class="form-control form-control-sm">
           </td>
-          <td data-th="EPD %">
-            <div class="input-group input-group-sm flex-nowrap">
-              <input type="number" class="form-control">
-              <span class="input-group-text" id="basic-addon2">%</span>
-            </div>
+          <td data-th="銷售組織代碼與名稱" nowrap>
+            <input type="text" class="form-control form-control-sm">
           </td>
-          <td data-th="EPD" class="text-danger">
-            <input type="number" class="form-control form-control-sm">
+          <td data-th="通路代碼與名稱" nowrap>
+            <input type="text" class="form-control form-control-sm">
           </td>
-          <td data-th="Advanced">
-            <input type="number" class="form-control form-control-sm">
+          <td data-th="區域代碼與名稱" nowrap>
+            <input type="text" class="form-control form-control-sm">
           </td>
-          <td data-th="Total">
-            <input type="number" class="form-control form-control-sm">
+          <td data-th="業務員" nowrap>
+            <input type="text" class="form-control form-control-sm">
           </td>
         </tr>
         `
       trAdd.innerHTML = str;
   }
-  // $(".js-delete-Btn").on("click", (e) => {
-  //   e.preventDefault()
-  //   if (confirm("確定刪除嗎?")) {
-  //           e.target.parentNode.parentNode.remove()
-  //       }
-  // })
   const rowsCountLength = tableArea.rows.length;
   const rowsCount = tableArea.rows;
   for (let i = 0; i < rowsCountLength; i++){
@@ -81,7 +65,3 @@ function addTemplate(e) {
 }
 
 
-function setAmountSum(x) {
-  const AmountSum = amount.values
-  // console.log(x);
-};
