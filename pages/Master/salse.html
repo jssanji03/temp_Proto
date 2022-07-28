@@ -47,9 +47,8 @@
       <!-- Sidebar -->
       <div class="sidebar">
         <!-- Sidebar Menu -->
-        <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- <li class="nav-header">EXAMPLES</li> -->
+        <nav class="mt-2" id="sidebar-wrapper">
+          <!-- <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item menu-open">
               <a href="#" class="nav-link active">
                 <i class="nav-icon far fa-circle"></i>
@@ -78,14 +77,38 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link ">
+                  <a href="./products.html" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>Products</p>
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a href="./salseBudget.html" class="nav-link ">
+                    <i class="fas fa-user-alt nav-icon"></i>
+                    <p>SalesBudget</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./productsItem.html" class="nav-link ">
+                    <i class="fas fa-user-alt nav-icon"></i>
+                    <p>ProductsItem</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./otherProducts.html" class="nav-link ">
+                    <i class="fas fa-user-alt nav-icon"></i>
+                    <p>裕利產品</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./salesInfo.html" class="nav-link ">
+                    <i class="fas fa-user-alt nav-icon"></i>
+                    <p>salesInfo</p>
+                  </a>
+                </li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
         </nav>
         <!-- /.sidebar-menu -->
       </div>
@@ -128,7 +151,7 @@
                         <thead>
                           <tr class="tr-only-hide">
                             <th>
-                              <input type="button" class="btn jess-btn-add js-addList-Btn" data-area="itemArea" value="+">
+                              <input type="button" class="btn jess-btn-add js-addList-Btn" data-area="salesArea" value="+">
                             </th>
                             <th nowrap>業務員編號</th>
                             <th nowrap>業務中文姓名</th>
@@ -142,13 +165,26 @@
                         <tbody class="js-itemArea">
                           <tr>
                             <td nowrap></td>
-                            <td data-th="業務員編號" nowrap>AC-004765</td>
-                            <td data-th="業務中文姓名" nowrap>LG_2022_Q1_Mar-Apr_VCC Campaign</td>
-                            <td data-th="業務英文姓名" nowrap>44375678</td>
-                            <td data-th="狀態" nowrap>106</td>
-                            <td data-th="職稱" nowrap>台北市信義區</td>
-                            <td data-th="主管員編號" nowrap>陳ＯＯ</td>
-                            <td data-th="姓名" nowrap>AX0058</td>
+                            <td data-th="業務員編號" nowrap><input type="text" class="form-control form-control-sm" value="00123"></td>
+                            <td data-th="業務中文姓名" nowrap><input type="text" class="form-control form-control-sm" value="陳ＯＯ"></td>
+                            <td data-th="業務英文姓名" nowrap><input type="text" class="form-control form-control-sm" value="Jason"></td>
+                            <td data-th="狀態" nowrap>
+                              <select class="form-select form-select-sm select2">
+                                <option selected>在職</option>
+                                <option>離職</option>
+                              </select>
+                            </td>
+                            <td data-th="職稱" nowrap>
+                              <select class="form-select form-select-sm select2">
+                                <option selected>員工</option>
+                                <option>主管</option>
+                              </select>
+                            </td>
+                            <td data-th="主管員編號" nowrap>
+                              <input type="text" class="form-control form-control-sm" value="AX0058"></td>
+                            <td data-th="姓名" nowrap>
+                              <input type="text" class="form-control form-control-sm" value="陳ＯＯ">
+                            </td>
                           </tr>
                         </tbody>
                       </table>
@@ -200,6 +236,7 @@
   <!-- AdminLTE App -->
   <script src="../../dist/js/adminlte.min.js"></script>
   <!-- custom -->
+  <script src="../../dist/js/menu.js"></script>
   <script src="../../dist/js/component.js"></script>
   <script src="../../dist/js/create.js"></script>
   <!-- Page specific script -->

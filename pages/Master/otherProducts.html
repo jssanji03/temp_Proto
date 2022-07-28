@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Customer</title>
+  <title>OtherProducts</title>
 
 
   <!-- Theme style -->
@@ -48,67 +48,6 @@
       <div class="sidebar">
         <!-- Sidebar Menu -->
         <nav class="mt-2" id="sidebar-wrapper">
-          <!-- <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <li class="nav-item menu-open">
-              <a href="#" class="nav-link active">
-                <i class="nav-icon far fa-circle"></i>
-                <p>
-                  Master
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="./index.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>master</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./customer.html" class="nav-link active">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Customer</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./salse.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Sales</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./products.html" class="nav-link">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Products</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./salseBudget.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>SalesBudget</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./productsItem.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>ProductsItem</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./otherProducts.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>裕利產品</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./salesInfo.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>salesInfo</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul> -->
         </nav>
         <!-- /.sidebar-menu -->
       </div>
@@ -122,18 +61,60 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Customer</h1>
+              <h1>產品組合對應表</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Customer</li>
+                <li class="breadcrumb-item active">產品組合對應表</li>
               </ol>
             </div>
           </div>
         </div><!-- /.container-fluid -->
       </section>
-
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header Soe_searchBg">
+                  <h3 class="card-title text-primary m-0">Search</h3>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label>裕利產品代碼</label>
+                        <input type="text" class="form-control form-control-sm" value="ABSOLUTE">
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label>關聯產品組合代碼</label>
+                        <input type="text" class="form-control form-control-sm" value="股份有限公司">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-secondary float-right">Search</button>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
       <section class="content">
         <div class="container-fluid">
           <div class="row">
@@ -141,7 +122,7 @@
               <!-- Main content -->
               <div class="card mb-3">
                 <div class="card-header">
-                  <h3 class="card-title my-1"> Result</h3>
+                  <h3 class="card-title my-1">裕利的產品組合對應表</h3>
                 </div>
                 <div class="card-body">
                   <!-- Table row -->
@@ -151,46 +132,34 @@
                         <thead>
                           <tr class="tr-only-hide">
                             <th>
-                              <input type="button" class="btn jess-btn-add js-addList-Btn" data-area="itemArea" value="+">
+                              <input type="button" class="btn jess-btn-add js-addList-Btn" data-area="otherProductsArea"
+                                value="+">
                             </th>
-                            <th nowrap>客戶代碥</th>
-                            <th nowrap>客戶名稱</th>
-                            <th nowrap>統一編號</th>
-                            <th nowrap>郵遞區號</th>
-                            <th nowrap>公司地址</th>
-                            <th nowrap>負責人</th>
-                            <th nowrap>銷售組織代碼與名稱</th>
-                            <th nowrap>通路代碼與名稱</th>
-                            <th nowrap>區域代碼與名稱</th>
-                            <th nowrap>業務員</th>
+                            <th nowrap>產品代碼</th>
+                            <th nowrap>產品名稱</th>
+                            <th nowrap>數量</th>
+                            <th nowrap>客戶產品代碼</th>
+                            <th nowrap>狀態</th>
                           </tr>
                         </thead>
                         <tbody class="js-itemArea">
                           <tr>
                             <td nowrap></td>
-                            <td data-th="公司代碼" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="AC-004765">
+                            <td data-th="產品代碼" nowrap><input type="text" class="form-control form-control-sm"
+                                value="00123"></td>
+                            <td data-th="產品名稱" nowrap><input type="text" class="form-control form-control-sm"
+                                value="合利他命-EX"></td>
+                            <td data-th="數量" nowrap><input type="number" class="form-control form-control-sm"
+                                value="1500"></td>
+                            <td data-th="客戶產品代碼" nowrap>
+                              <input type="text" class="form-control form-control-sm" value="AX0058">
                             </td>
-                            <td data-th="公司名稱" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="LG_2022_Q1_Mar-Apr_VCC Campaign">
+                            <td data-th="狀態" nowrap>
+                              <select class="form-select form-select-sm">
+                                <option selected>上架</option>
+                                <option>下架</option>
+                              </select>
                             </td>
-                            <td data-th="統一編號" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="44375678"></td>
-                            <td data-th="郵遞區號" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="106">
-                            </td>
-                            <td data-th="公司地址" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="台北市信義區"></td>
-                            <td data-th="負責人" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="陳ＯＯ"></td>
-                            <td data-th="銷售組織代碼與名稱" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="AX0058"></td>
-                            <td data-th="通路代碼與名稱" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="BC"></td>
-                            <td data-th="區域代碼與名稱" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="235"></td>
-                            <td data-th="業務員" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="陳ＯＯ"></td>
                           </tr>
                         </tbody>
                       </table>

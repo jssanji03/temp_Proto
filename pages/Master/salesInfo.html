@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoice</title>
+
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../../dist/scss/style.css">
+
+</head>
+
+<body class="hold-transition sidebar-mini sidebar-collapse">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light justify-content-between">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./login.html" role="button">
+            Login
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-link">
+        <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">AdminLTE 3</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar Menu -->
+        <nav class="mt-2" id="sidebar-wrapper">
+          
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>預算資料上傳</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">預算資料上傳</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header Soe_searchBg">
+                  <h3 class="card-title text-primary m-0">UPLOAD</h3>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label for="exampleInputFile">預算資料</label>
+                        <div class="input-group mb-3">
+                          <input type="file" class="form-control form-control-sm" id="inputGroupFile02">
+                          <label class="input-group-text m-0" for="inputGroupFile02">上傳</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <!-- <div class="card-footer">
+                  <button type="submit" class="btn btn-secondary float-right">Search</button>
+                </div> -->
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <!-- Main content -->
+              <div class="card mb-3">
+                <div class="card-header">
+                  <h3 class="card-title">Search Result</h3>
+                </div>
+                <div class="card-body">
+                  <!-- Table row -->
+                  <div class="row mt-2">
+                    <div class="col-12 table-responsive">
+                      <table class="table datatable-RWDcard text-center">
+                        <thead>
+                          <tr class="tr-only-hide">
+                            <th nowrap>Month</th>
+                            <th nowrap>Transaction Date</th>
+                            <th nowrap>GUI Number</th>
+                            <th nowrap>SDS Item Code</th>
+                            <th nowrap>Principal Item</th>
+                            <th nowrap>SAP Material Number</th>
+                            <th nowrap>Item Description</th>
+                            <th nowrap>Net Sales Amount</th>
+                            <th nowrap>Net Sales Quantity</th>
+                            <th nowrap>Sales Amount</th>
+                            <th nowrap>Sales Quantity</th>
+                            <th nowrap>Return Amount</th>
+                            <th nowrap>Return Quantity</th>
+                            <th nowrap>Discount</th>
+                            <th nowrap>Bonus Quantity</th>
+                            <th nowrap>Gimmick Quantity</th>
+                            <th nowrap>Sample Quantity</th>
+                            <th nowrap>Sample Return Quantity</th>
+                            <th nowrap>SAP Sold To Code</th>
+                            <th nowrap>SDS Customer Code</th>
+                            <th nowrap>Customer Name</th>
+                            <th nowrap>Customer Address</th>
+                            <th nowrap>Ship to Customer</th>
+                            <th nowrap>Ship to Customer Name</th>
+                            <th nowrap>Ship to Customer Address</th>
+                            <th nowrap>Zip Code</th>
+                            <th nowrap>Order Date</th>
+                            <th nowrap>Order Number</th>
+                            <th nowrap>Customer PO Number</th>
+                            <th nowrap>Tel. no</th>
+                            <th nowrap>Payer Code</th>
+                            <th nowrap>Payment Term</th>
+                            <th nowrap>Expiry Date</th>
+                            <th nowrap>Billing Document</th> 
+                          </tr>
+                        </thead>
+                        <tbody> 
+                          <tr>
+                            <td data-th="Month" nowrap>202206</td>
+                            <td data-th="Transaction Date" nowrap>20220606</td>
+                            <td data-th="GUI Number" nowrap>0055524990</td>
+                            <td data-th="SDS Item Code" nowrap>315AA40</td>
+                            <td data-th="Principal Item" nowrap>AAT7</td>
+                            <td data-th="SAP Material Number" nowrap>23265145</td>
+                            <td data-th="Item Description" nowrap>(315AA42)Alinamin A25 25mg 10Tx2</td>
+                            <td data-th="Net Sales Amount" nowrap>-57</td>
+                            <td data-th="Net Sales Quantity" nowrap>1</td>
+                            <td data-th="Sales Amount" nowrap>0</td>
+                            <td data-th="Sales Quantity" nowrap>0</td>
+                            <td data-th="Return Amount" nowrap>-61</td>
+                            <td data-th="Return Quantity" nowrap>-1</td>
+                            <td data-th="Discount" nowrap>0</td>
+                            <td data-th="Bonus Quantity" nowrap>0</td>
+                            <td data-th="Gimmick Quantity" nowrap>0</td>
+                            <td data-th="Sample Quantity" nowrap>0</td>
+                            <td data-th="Sample Return Quantity" nowrap>0</td>
+                            <td data-th="SAP Sold To Code" nowrap>30073751</td>
+                            <td data-th="SDS Customer Code" nowrap>JL0019</td>
+                            <td data-th="Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Customer Address" nowrap>桃園市觀音區工業七路１０號</td>
+                            <td data-th="Ship to Customer" nowrap>70139106</td>
+                            <td data-th="Ship to Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Ship to Customer Address" nowrap>桃園市觀音區工業七路１０號<</td>
+                            <td data-th="Zip Code" nowrap>82059</td>
+                            <td data-th="Order Date" nowrap>20220606</td>
+                            <td data-th="Order Number" nowrap>78064205</td>
+                            <td data-th="Customer PO Number" nowrap>R22060356-01</td>
+                            <td data-th="Tel. no" nowrap>0225078881</td>
+                            <td data-th="Payer Code" nowrap>30123366</td>
+                            <td data-th="Payment Term" nowrap>K001</td>
+                            <td data-th="Expiry Date" nowrap>20221028</td>
+                            <td data-th="Billing Document" nowrap>H230</td>
+                          </tr> 
+                          <tr>
+                            <td data-th="Month" nowrap>202206</td>
+                            <td data-th="Transaction Date" nowrap>20220610</td>
+                            <td data-th="GUI Number" nowrap>HK81009633</td>
+                            <td data-th="SDS Item Code" nowrap>315AA40</td>
+                            <td data-th="Principal Item" nowrap>AAT7</td>
+                            <td data-th="SAP Material Number" nowrap>23265145</td>
+                            <td data-th="Item Description" nowrap>(315AA42)Alinamin A25 25mg 10Tx2</td>
+                            <td data-th="Net Sales Amount" nowrap>-57</td>
+                            <td data-th="Net Sales Quantity" nowrap>1</td>
+                            <td data-th="Sales Amount" nowrap>0</td>
+                            <td data-th="Sales Quantity" nowrap>0</td>
+                            <td data-th="Return Amount" nowrap>-61</td>
+                            <td data-th="Return Quantity" nowrap>-1</td>
+                            <td data-th="Discount" nowrap>0</td>
+                            <td data-th="Bonus Quantity" nowrap>0</td>
+                            <td data-th="Gimmick Quantity" nowrap>0</td>
+                            <td data-th="Sample Quantity" nowrap>0</td>
+                            <td data-th="Sample Return Quantity" nowrap>0</td>
+                            <td data-th="SAP Sold To Code" nowrap>30111763</td>
+                            <td data-th="SDS Customer Code" nowrap>SE0280</td>
+                            <td data-th="Customer Name" nowrap>杏一－後山埤藥局</td>
+                            <td data-th="Customer Address" nowrap>台北市信義區忠孝東路五段７７８號 </td>
+                            <td data-th="Ship to Customer" nowrap>70482839</td>
+                            <td data-th="Ship to Customer Name" nowrap>杏一－後山埤藥局 </td>
+                            <td data-th="Ship to Customer Address" nowrap>台北市信義區忠孝東路五段７７８號 ></td>
+                            <td data-th="Zip Code" nowrap>82059</td>
+                            <td data-th="Order Date" nowrap>20220610</td>
+                            <td data-th="Order Number" nowrap>78078501</td>
+                            <td data-th="Customer PO Number" nowrap>R22052543-02</td>
+                            <td data-th="Tel. no" nowrap>0227182286</td>
+                            <td data-th="Payer Code" nowrap>30123366</td>
+                            <td data-th="Payment Term" nowrap>K020</td>
+                            <td data-th="Expiry Date" nowrap>20221028</td>
+                            <td data-th="Billing Document" nowrap>H230</td>
+                          </tr> 
+                          <tr>
+                            <td data-th="Month" nowrap>202206</td>
+                            <td data-th="Transaction Date" nowrap>20220614</td>
+                            <td data-th="GUI Number" nowrap>KJ18196341</td>
+                            <td data-th="SDS Item Code" nowrap>315AA40</td>
+                            <td data-th="Principal Item" nowrap>AAT7</td>
+                            <td data-th="SAP Material Number" nowrap>23265145</td>
+                            <td data-th="Item Description" nowrap>(315AA42)Alinamin A25 25mg 10Tx2</td>
+                            <td data-th="Net Sales Amount" nowrap>-57</td>
+                            <td data-th="Net Sales Quantity" nowrap>1</td>
+                            <td data-th="Sales Amount" nowrap>0</td>
+                            <td data-th="Sales Quantity" nowrap>0</td>
+                            <td data-th="Return Amount" nowrap>-61</td>
+                            <td data-th="Return Quantity" nowrap>-1</td>
+                            <td data-th="Discount" nowrap>0</td>
+                            <td data-th="Bonus Quantity" nowrap>0</td>
+                            <td data-th="Gimmick Quantity" nowrap>0</td>
+                            <td data-th="Sample Quantity" nowrap>0</td>
+                            <td data-th="Sample Return Quantity" nowrap>0</td>
+                            <td data-th="SAP Sold To Code" nowrap>30375519</td>
+                            <td data-th="SDS Customer Code" nowrap>75519C</td>
+                            <td data-th="Customer Name" nowrap>松本清－微風南京店</td>
+                            <td data-th="Customer Address" nowrap>台北市中山區復興北路３５６號１樓 </td>
+                            <td data-th="Ship to Customer" nowrap>70436048</td>
+                            <td data-th="Ship to Customer Name" nowrap>松本清－中山國中店 </td>
+                            <td data-th="Ship to Customer Address" nowrap>台北市中山區復興北路３５６號１樓</td>
+                            <td data-th="Zip Code" nowrap>10476</td>
+                            <td data-th="Order Date" nowrap>20220614</td>
+                            <td data-th="Order Number" nowrap>78133344</td>
+                            <td data-th="Customer PO Number" nowrap>R22061090-01</td>
+                            <td data-th="Tel. no" nowrap>0422296990</td>
+                            <td data-th="Payer Code" nowrap>30095421</td>
+                            <td data-th="Payment Term" nowrap>K001</td>
+                            <td data-th="Expiry Date" nowrap>20221028</td>
+                            <td data-th="Billing Document" nowrap>I263</td>
+                          </tr> 
+                          <tr>
+                            <td data-th="Month" nowrap>202206</td>
+                            <td data-th="Transaction Date" nowrap>20220622</td>
+                            <td data-th="GUI Number" nowrap>NY18096562</td>
+                            <td data-th="SDS Item Code" nowrap>315AA40</td>
+                            <td data-th="Principal Item" nowrap>AAT7</td>
+                            <td data-th="SAP Material Number" nowrap>23265145</td>
+                            <td data-th="Item Description" nowrap>(315AA42)Alinamin A25 25mg 10Tx2</td>
+                            <td data-th="Net Sales Amount" nowrap>-57</td>
+                            <td data-th="Net Sales Quantity" nowrap>1</td>
+                            <td data-th="Sales Amount" nowrap>0</td>
+                            <td data-th="Sales Quantity" nowrap>0</td>
+                            <td data-th="Return Amount" nowrap>-61</td>
+                            <td data-th="Return Quantity" nowrap>-1</td>
+                            <td data-th="Discount" nowrap>0</td>
+                            <td data-th="Bonus Quantity" nowrap>0</td>
+                            <td data-th="Gimmick Quantity" nowrap>0</td>
+                            <td data-th="Sample Quantity" nowrap>0</td>
+                            <td data-th="Sample Return Quantity" nowrap>0</td>
+                            <td data-th="SAP Sold To Code" nowrap>30343423</td>
+                            <td data-th="SDS Customer Code" nowrap>43423C</td>
+                            <td data-th="Customer Name" nowrap>松本清－台中一中店</td>
+                            <td data-th="Customer Address" nowrap>台北市松山區南京東路三段３３７號Ｂ１樓（Ｂ０１、Ｂ０２櫃） </td>
+                            <td data-th="Ship to Customer" nowrap>70417514</td>
+                            <td data-th="Ship to Customer Name" nowrap>松本清－微風南京店 </td>
+                            <td data-th="Ship to Customer Address" nowrap>台北市松山區南京東路三段３３７號Ｂ１樓（Ｂ０１、Ｂ０２櫃） </td>
+                            <td data-th="Zip Code" nowrap>10550</td>
+                            <td data-th="Order Date" nowrap>20220622</td>
+                            <td data-th="Order Number" nowrap>78150858</td>
+                            <td data-th="Customer PO Number" nowrap>202205屈臣氏(315)_40253531,3530-2</td>
+                            <td data-th="Tel. no" nowrap>0227882868</td>
+                            <td data-th="Payer Code" nowrap>30095421</td>
+                            <td data-th="Payment Term" nowrap>K012</td>
+                            <td data-th="Expiry Date" nowrap>20221028</td>
+                            <td data-th="Billing Document" nowrap>FI0303</td>
+                          </tr> 
+                          <tr>
+                            <td data-th="Month" nowrap>202206</td>
+                            <td data-th="Transaction Date" nowrap>20220614</td>
+                            <td data-th="GUI Number" nowrap>0055583678</td>
+                            <td data-th="SDS Item Code" nowrap>315AA40</td>
+                            <td data-th="Principal Item" nowrap>AAT7</td>
+                            <td data-th="SAP Material Number" nowrap>23265145</td>
+                            <td data-th="Item Description" nowrap>(315AA42)Alinamin A25 25mg 10Tx2</td>
+                            <td data-th="Net Sales Amount" nowrap>-57</td>
+                            <td data-th="Net Sales Quantity" nowrap>1</td>
+                            <td data-th="Sales Amount" nowrap>0</td>
+                            <td data-th="Sales Quantity" nowrap>0</td>
+                            <td data-th="Return Amount" nowrap>-61</td>
+                            <td data-th="Return Quantity" nowrap>-1</td>
+                            <td data-th="Discount" nowrap>0</td>
+                            <td data-th="Bonus Quantity" nowrap>0</td>
+                            <td data-th="Gimmick Quantity" nowrap>0</td>
+                            <td data-th="Sample Quantity" nowrap>0</td>
+                            <td data-th="Sample Return Quantity" nowrap>0</td>
+                            <td data-th="SAP Sold To Code" nowrap>30312366</td>
+                            <td data-th="SDS Customer Code" nowrap>12366C</td>
+                            <td data-th="Customer Name" nowrap>台灣屈臣氏個人用品商店股份有限公司</td>
+                            <td data-th="Customer Address" nowrap>臺中市北區三民路三段１０８號 </td>
+                            <td data-th="Ship to Customer" nowrap>70362752</td>
+                            <td data-th="Ship to Customer Name" nowrap>台灣屈臣氏個人用品商店股份有限公司 </td>
+                            <td data-th="Ship to Customer Address" nowrap>臺中市北區三民路三段１０８號</td>
+                            <td data-th="Zip Code" nowrap>40445</td>
+                            <td data-th="Order Date" nowrap>20220623</td>
+                            <td data-th="Order Number" nowrap>78093934</td>
+                            <td data-th="Customer PO Number" nowrap>R22052029-01</td>
+                            <td data-th="Tel. no" nowrap>0227882868</td>
+                            <td data-th="Payer Code" nowrap>30095421</td>
+                            <td data-th="Payment Term" nowrap>C042</td>
+                            <td data-th="Expiry Date" nowrap>20231207</td>
+                            <td data-th="Billing Document" nowrap>FI0322</td>
+                          </tr> 
+                          <tr>
+                            <td data-th="Month" nowrap>202206</td>
+                            <td data-th="Transaction Date" nowrap>20220614</td>
+                            <td data-th="GUI Number" nowrap>YQ62444820</td>
+                            <td data-th="SDS Item Code" nowrap>315AA40</td>
+                            <td data-th="Principal Item" nowrap>AAT7</td>
+                            <td data-th="SAP Material Number" nowrap>23265145</td>
+                            <td data-th="Item Description" nowrap>(315AA42)Alinamin A25 25mg 10Tx2</td>
+                            <td data-th="Net Sales Amount" nowrap>-57</td> 
+                            <td data-th="Net Sales Quantity" nowrap>1</td>
+                            <td data-th="Sales Amount" nowrap>0</td>
+                            <td data-th="Sales Quantity" nowrap>0</td>
+                            <td data-th="Return Amount" nowrap>-61</td>
+                            <td data-th="Return Quantity" nowrap>-1</td>
+                            <td data-th="Discount" nowrap>0</td>
+                            <td data-th="Bonus Quantity" nowrap>0</td>
+                            <td data-th="Gimmick Quantity" nowrap>0</td>
+                            <td data-th="Sample Quantity" nowrap>0</td>
+                            <td data-th="Sample Return Quantity" nowrap>0</td>
+                            <td data-th="SAP Sold To Code" nowrap>30269516</td>
+                            <td data-th="SDS Customer Code" nowrap>WZ8062</td>
+                            <td data-th="Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Customer Address" nowrap>臺北市松山區八德路４段７６０號１１樓之１、之２及１４樓 </td>
+                            <td data-th="Ship to Customer" nowrap>70362752</td>
+                            <td data-th="Ship to Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心） </td>
+                            <td data-th="Ship to Customer Address" nowrap>臺北市松山區八德路４段７６０號１１樓之１、之２及１４樓</td>
+                            <td data-th="Zip Code" nowrap>10567</td>
+                            <td data-th="Order Date" nowrap>20220615</td>
+                            <td data-th="Order Number" nowrap>78093934</td>
+                            <td data-th="Customer PO Number" nowrap>R22052029-01</td>
+                            <td data-th="Tel. no" nowrap>0227882868</td>
+                            <td data-th="Payer Code" nowrap>30269516</td>
+                            <td data-th="Payment Term" nowrap>K020</td>
+                            <td data-th="Expiry Date" nowrap>20220114</td>
+                            <td data-th="Billing Document" nowrap>FJ0306</td>
+                          </tr> 
+                          <tr>
+                            <td data-th="Month" nowrap>202206</td>
+                            <td data-th="Transaction Date" nowrap>20220623</td>
+                            <td data-th="GUI Number" nowrap>YQ62444820</td>
+                            <td data-th="SDS Item Code" nowrap>315AA42</td>
+                            <td data-th="Principal Item" nowrap>AAT7</td>
+                            <td data-th="SAP Material Number" nowrap>23265146</td>
+                            <td data-th="Item Description" nowrap>Alinamin A25 25mg 10Tx2</td>
+                            <td data-th="Net Sales Amount" nowrap>-61</td>
+                            <td data-th="Net Sales Quantity" nowrap>1</td>
+                            <td data-th="Sales Amount" nowrap>0</td>
+                            <td data-th="Sales Quantity" nowrap>0</td>
+                            <td data-th="Return Amount" nowrap>-61</td>
+                            <td data-th="Return Quantity" nowrap>-1</td>
+                            <td data-th="Discount" nowrap>0</td>
+                            <td data-th="Bonus Quantity" nowrap>0</td>
+                            <td data-th="Gimmick Quantity" nowrap>0</td>
+                            <td data-th="Sample Quantity" nowrap>0</td>
+                            <td data-th="Sample Return Quantity" nowrap>0</td>
+                            <td data-th="SAP Sold To Code" nowrap>30073752</td>
+                            <td data-th="SDS Customer Code" nowrap>JL0020</td>
+                            <td data-th="Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Customer Address" nowrap>桃園市觀音區工業七路１０號</td>
+                            <td data-th="Ship to Customer" nowrap>70362752</td>
+                            <td data-th="Ship to Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Ship to Customer Address" nowrap>桃園市觀音區工業七路１０號</td>
+                            <td data-th="Zip Code" nowrap>32849</td>
+                            <td data-th="Order Date" nowrap>20220615</td>
+                            <td data-th="Order Number" nowrap>78093934</td>
+                            <td data-th="Customer PO Number" nowrap>R22052029-01</td>
+                            <td data-th="Tel. no" nowrap>0227882868</td>
+                            <td data-th="Payer Code" nowrap>30095421</td>
+                            <td data-th="Payment Term" nowrap>K001</td>
+                            <td data-th="Expiry Date" nowrap>20220609</td>
+                            <td data-th="Billing Document" nowrap>FI0320</td>
+                          </tr> 
+                          <tr>
+                            <td data-th="Month" nowrap>202206</td>
+                            <td data-th="Transaction Date" nowrap>20220615</td>
+                            <td data-th="GUI Number" nowrap>YQ62444820</td>
+                            <td data-th="SDS Item Code" nowrap>315HC10P</td>
+                            <td data-th="Principal Item" nowrap>HIT8</td>
+                            <td data-th="SAP Material Number" nowrap>23265123</td>
+                            <td data-th="Item Description" nowrap>PX Hicee 200mg 20T/Tub</td>
+                            <td data-th="Net Sales Amount" nowrap>-61</td>
+                            <td data-th="Net Sales Quantity" nowrap>1</td>
+                            <td data-th="Sales Amount" nowrap>0</td>
+                            <td data-th="Sales Quantity" nowrap>0</td>
+                            <td data-th="Return Amount" nowrap>-61</td>
+                            <td data-th="Return Quantity" nowrap>-1</td>
+                            <td data-th="Discount" nowrap>0</td>
+                            <td data-th="Bonus Quantity" nowrap>0</td>
+                            <td data-th="Gimmick Quantity" nowrap>0</td>
+                            <td data-th="Sample Quantity" nowrap>0</td>
+                            <td data-th="Sample Return Quantity" nowrap>0</td>
+                            <td data-th="SAP Sold To Code" nowrap>30073752</td>
+                            <td data-th="SDS Customer Code" nowrap>JL0020</td>
+                            <td data-th="Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Customer Address" nowrap>桃園市觀音區工業七路１０號</td>
+                            <td data-th="Ship to Customer" nowrap>70362752</td>
+                            <td data-th="Ship to Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Ship to Customer Address" nowrap>桃園市觀音區工業七路１０號</td>
+                            <td data-th="Zip Code" nowrap>32849</td>
+                            <td data-th="Order Date" nowrap>20220616</td>
+                            <td data-th="Order Number" nowrap>78093934</td>
+                            <td data-th="Customer PO Number" nowrap>R22051384-05</td>
+                            <td data-th="Tel. no" nowrap>0227882868</td>
+                            <td data-th="Payer Code" nowrap>30095421</td>
+                            <td data-th="Payment Term" nowrap>K012</td>
+                            <td data-th="Expiry Date" nowrap>20230728</td>
+                            <td data-th="Billing Document" nowrap>FI0320</td>
+                          </tr> 
+                          <tr>
+                            <td data-th="Month" nowrap>202206</td>
+                            <td data-th="Transaction Date" nowrap>20220615</td>
+                            <td data-th="GUI Number" nowrap>YQ62437789</td>
+                            <td data-th="SDS Item Code" nowrap>315HC10P</td>
+                            <td data-th="Principal Item" nowrap>HIT8</td>
+                            <td data-th="SAP Material Number" nowrap>23265123</td>
+                            <td data-th="Item Description" nowrap>PX Hicee 200mg 20T/Tub</td>
+                            <td data-th="Net Sales Amount" nowrap>-61</td>
+                            <td data-th="Net Sales Quantity" nowrap>1</td>
+                            <td data-th="Sales Amount" nowrap>0</td>
+                            <td data-th="Sales Quantity" nowrap>0</td>
+                            <td data-th="Return Amount" nowrap>-61</td>
+                            <td data-th="Return Quantity" nowrap>-1</td>
+                            <td data-th="Discount" nowrap>0</td>
+                            <td data-th="Bonus Quantity" nowrap>0</td>
+                            <td data-th="Gimmick Quantity" nowrap>0</td>
+                            <td data-th="Sample Quantity" nowrap>0</td>
+                            <td data-th="Sample Return Quantity" nowrap>0</td>
+                            <td data-th="SAP Sold To Code" nowrap>30073752</td>
+                            <td data-th="SDS Customer Code" nowrap>JL0020</td>
+                            <td data-th="Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Customer Address" nowrap>桃園市觀音區工業七路１０號</td>
+                            <td data-th="Ship to Customer" nowrap>70362752</td>
+                            <td data-th="Ship to Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Ship to Customer Address" nowrap>桃園市觀音區工業七路１０號</td>
+                            <td data-th="Zip Code" nowrap>32849</td>
+                            <td data-th="Order Date" nowrap>20220616</td>
+                            <td data-th="Order Number" nowrap>78093934</td>
+                            <td data-th="Customer PO Number" nowrap>R22051384-05</td>
+                            <td data-th="Tel. no" nowrap>0423582999</td>
+                            <td data-th="Payer Code" nowrap>30095421</td>
+                            <td data-th="Payment Term" nowrap>K020</td>
+                            <td data-th="Expiry Date" nowrap>20220518</td>
+                            <td data-th="Billing Document" nowrap>FI0320</td>
+                          </tr> 
+                          <tr>
+                            <td data-th="Month" nowrap>202206</td>
+                            <td data-th="Transaction Date" nowrap>20220615</td>
+                            <td data-th="Billing Document" nowrap>FI0322</td> 
+                            <td data-th="SDS Item Code" nowrap>315HC10P</td>
+                            <td data-th="Principal Item" nowrap>HIT8</td>
+                            <td data-th="SAP Material Number" nowrap>23265123</td>
+                            <td data-th="Item Description" nowrap>PX Hicee 200mg 20T/Tub</td>
+                            <td data-th="Net Sales Amount" nowrap>-61</td>
+                            <td data-th="Net Sales Quantity" nowrap>1</td>
+                            <td data-th="Sales Amount" nowrap>0</td>
+                            <td data-th="Sales Quantity" nowrap>0</td>
+                            <td data-th="Return Amount" nowrap>-61</td>
+                            <td data-th="Return Quantity" nowrap>-1</td>
+                            <td data-th="Discount" nowrap>0</td>
+                            <td data-th="Bonus Quantity" nowrap>0</td>
+                            <td data-th="Gimmick Quantity" nowrap>0</td>
+                            <td data-th="Sample Quantity" nowrap>0</td>
+                            <td data-th="Sample Return Quantity" nowrap>0</td>
+                            <td data-th="SAP Sold To Code" nowrap>30073751</td>
+                            <td data-th="SDS Customer Code" nowrap>JL0019</td>
+                            <td data-th="Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Customer Address" nowrap>桃園市觀音區工業七路１０號</td>
+                            <td data-th="Ship to Customer" nowrap>70362752</td>
+                            <td data-th="Ship to Customer Name" nowrap>佳蘭－弘達流通股份有限公司（觀音倉物流中心）</td>
+                            <td data-th="Ship to Customer Address" nowrap>桃園市觀音區工業七路１０號</td>
+                            <td data-th="Zip Code" nowrap>82059</td>
+                            <td data-th="Order Date" nowrap>20220616</td>
+                            <td data-th="Order Number" nowrap>78027817</td>
+                            <td data-th="Customer PO Number" nowrap>R22052141-01</td>
+                            <td data-th="Tel. no" nowrap> 0423582999</td>
+                            <td data-th="Payer Code" nowrap>30095421</td>
+                            <td data-th="Payment Term" nowrap>C042</td>
+                            <td data-th="Expiry Date" nowrap>20220609</td>
+                            <td data-th="Billing Document" nowrap>H230</td>
+                          </tr> 
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- this row will not appear when printing -->
+              </div>
+              <!-- /.invoice -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="float-right d-none d-sm-block">
+        <b>Version</b> 3.2.0
+      </div>
+      <strong>Copyright &copy; 2014-2021 <a>AdminLTE.io</a>.</strong> All rights reserved.
+    </footer>
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 5 -->
+  <script src="../../custom_plugin/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- DataTables  & Plugins -->
+  <script src="../../plugins/datatables/jquery.dataTables.js"></script>
+  <script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="../../plugins/jszip/jszip.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+  <!-- Select2 -->
+  <script src="../../plugins/select2/js/select2.full.min.js"></script>
+
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- custom -->
+  <script src="../../dist/js/menu.js"></script>
+  <script src="../../dist/js/component.js"></script>
+  <!-- Page specific script -->
+</body>
+
+
+</html>
