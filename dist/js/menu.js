@@ -72,10 +72,12 @@ const sidebar = () => {
 sidebar()
 
 $(function () {
-  const pathname = window.location.pathname.split('/')[3];
+  const pathname = window.location.pathname.split('/');
+  const currentURL = pathname[pathname.length-1]
+  console.log(pathname[pathname.length-1]);
   $(".nav-sidebar li a.nav-link").each( function() {
     const href = $(this).attr("href");
-    if (href === pathname) {
+    if (href === currentURL) {
         $(this).addClass("active");
      }
     });
