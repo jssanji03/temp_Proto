@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Invoice</title>
+  <title>Customer</title>
 
 
   <!-- Theme style -->
@@ -66,7 +66,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./customer.html" class="nav-link">
+                  <a href="#" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>Customer</p>
                   </a>
@@ -99,68 +99,18 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Index</h1>
+              <h1>Customer</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Index</li>
+                <li class="breadcrumb-item active">Customer</li>
               </ol>
             </div>
           </div>
         </div><!-- /.container-fluid -->
       </section>
-    
-      <section class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-header Soe_searchBg">
-                  <h3 class="card-title text-primary m-0">Search</h3>
-                  <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                      <i class="fas fa-minus"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.card-header -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <!-- select -->
-                      <div class="form-group">
-                        <label>公司代碼</label>
-                        <input type="text" class="form-control form-control-sm" value="ABSOLUTE">
-                      </div>
-                    </div>
-                    <div class="col-sm-3">
-                      <!-- select -->
-                      <div class="form-group">
-                        <label>公司名稱</label>
-                        <input type="text" class="form-control form-control-sm" value="股份有限公司">
-                      </div>
-                    </div>
-                    <div class="col-sm-3">
-                      <!-- select -->
-                      <div class="form-group">
-                        <label>統一編號</label>
-                        <input type="text" class="form-control form-control-sm" value="12347654">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.card-body -->
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-secondary float-right">Search</button>
-                </div>
-                <!-- /.card-footer -->
-              </div>
-              <!-- /.card -->
-            </div>
-          </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
-      </section>
+
       <section class="content">
         <div class="container-fluid">
           <div class="row">
@@ -168,7 +118,7 @@
               <!-- Main content -->
               <div class="card mb-3">
                 <div class="card-header">
-                  <h3 class="card-title">Search Result</h3>
+                  <h3 class="card-title my-1"> Result</h3>
                 </div>
                 <div class="card-body">
                   <!-- Table row -->
@@ -177,12 +127,16 @@
                       <table class="table datatable-RWDcard text-center">
                         <thead>
                           <tr class="tr-only-hide">
-                            <th nowrap>公司代碼</th>
-                            <th nowrap>公司名稱</th>
+                            <th nowrap>客戶代碥</th>
+                            <th nowrap>客戶名稱</th>
                             <th nowrap>統一編號</th>
                             <th nowrap>郵遞區號</th>
                             <th nowrap>公司地址</th>
                             <th nowrap>負責人</th>
+                            <th nowrap>銷售組織代碼與名稱</th>
+                            <th nowrap>通路代碼與名稱</th>
+                            <th nowrap>區域代碼與名稱</th>
+                            <th nowrap>業務員</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -193,22 +147,10 @@
                             <td data-th="郵遞區號" nowrap>106</td>
                             <td data-th="公司地址" nowrap>台北市信義區</td>
                             <td data-th="負責人" nowrap>陳ＯＯ</td>
-                          </tr>
-                          <tr>
-                            <td data-th="公司代碼" nowrap>AD-006789</td>
-                            <td data-th="公司名稱" nowrap>合利他命_2022_Q1_Mar-Apr_VCC Campaign</td>
-                            <td data-th="統一編號" nowrap>88731234</td>
-                            <td data-th="郵遞區號" nowrap>106</td>
-                            <td data-th="公司地址" nowrap>台北市信義區</td>
-                            <td data-th="負責人" nowrap>陳ＯＯ</td>
-                          </tr>
-                          <tr>
-                            <td data-th="公司代碼" nowrap>AD-006789</td>
-                            <td data-th="公司名稱" nowrap>合利他命_2022_Q1_Mar-Apr_VCC Campaign</td>
-                            <td data-th="統一編號" nowrap>88731234</td>
-                            <td data-th="郵遞區號" nowrap>106</td>
-                            <td data-th="公司地址" nowrap>台北市信義區</td>
-                            <td data-th="負責人" nowrap>陳ＯＯ</td>
+                            <td data-th="銷售組織代碼與名稱" nowrap>AX0058</td>
+                            <td data-th="通路代碼與名稱" nowrap>BC</td>
+                            <td data-th="區域代碼與名稱" nowrap>235</td>
+                            <td data-th="業務員" nowrap>陳ＯＯ</td>
                           </tr>
                         </tbody>
                       </table>
@@ -217,7 +159,7 @@
                   </div>
                 </div>
                 <!-- /.row -->
-        
+
                 <!-- this row will not appear when printing -->
               </div>
               <!-- /.invoice -->
