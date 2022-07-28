@@ -2,7 +2,7 @@ const sidebarArea = document.querySelector('#sidebar-wrapper')
 const sidebar = () => {
     let template = `
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <li class="nav-item menu-open">
+            <li class="nav-item">
               <a href="#" class="nav-link nav-menu">
                 <i class="nav-icon far fa-circle"></i>
                 <p>
@@ -73,7 +73,7 @@ const sidebar = () => {
                 </li>
               </ul>
             </li>
-            <li class="nav-item menu-open">
+            <li class="nav-item">
               <a href="#" class="nav-link nav-menu">
                 <i class="nav-icon far fa-circle"></i>
                 <p>
@@ -138,7 +138,7 @@ $(function () {
     if (href === currentURL) {
       $(this).addClass("active");
       $(this).parents(".nav-treeview").siblings(".nav-menu").addClass("active")
-      console.log( $(this).parents(".nav-treeview").siblings(".nav-menu").addClass("active"));
+      $(this).parents(".nav-item").addClass("menu-open")
      }
     });
 });
