@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Invoice</title>
+  <title>Sales</title>
 
 
   <!-- Theme style -->
@@ -59,43 +59,43 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link">
+                  <a href="./index.html" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>master</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="customer.html" class="nav-link">
+                  <a href="./customer.html" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>Customer</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="salse.html" class="nav-link ">
+                  <a href="./salse.html" class="nav-link active">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>Sales</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="products.html" class="nav-link">
+                  <a href="./products.html" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>Products</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="salseBudget.html" class="nav-link ">
+                  <a href="./salseBudget.html" class="nav-link ">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>SalesBudget</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="productsItem.html" class="nav-link ">
+                  <a href="./productsItem.html" class="nav-link ">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>ProductsItem</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="otherProducts.html" class="nav-link ">
+                  <a href="./otherProducts.html" class="nav-link ">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>裕利產品</p>
                   </a>
@@ -122,68 +122,18 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>公司</h1>
+              <h1>業務員</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">公司</li>
+                <li class="breadcrumb-item active">業務員</li>
               </ol>
             </div>
           </div>
         </div><!-- /.container-fluid -->
       </section>
-    
-      <section class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-header Soe_searchBg">
-                  <h3 class="card-title text-primary m-0">Search</h3>
-                  <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                      <i class="fas fa-minus"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.card-header -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <!-- select -->
-                      <div class="form-group">
-                        <label>公司代碼</label>
-                        <input type="text" class="form-control form-control-sm" value="ABSOLUTE">
-                      </div>
-                    </div>
-                    <div class="col-sm-3">
-                      <!-- select -->
-                      <div class="form-group">
-                        <label>公司名稱</label>
-                        <input type="text" class="form-control form-control-sm" value="股份有限公司">
-                      </div>
-                    </div>
-                    <div class="col-sm-3">
-                      <!-- select -->
-                      <div class="form-group">
-                        <label>統一編號</label>
-                        <input type="text" class="form-control form-control-sm" value="12347654">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.card-body -->
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-secondary float-right">Search</button>
-                </div>
-                <!-- /.card-footer -->
-              </div>
-              <!-- /.card -->
-            </div>
-          </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
-      </section>
+
       <section class="content">
         <div class="container-fluid">
           <div class="row">
@@ -191,7 +141,7 @@
               <!-- Main content -->
               <div class="card mb-3">
                 <div class="card-header">
-                  <h3 class="card-title">Search Result</h3>
+                  <h3 class="card-title my-1"> Result</h3>
                 </div>
                 <div class="card-body">
                   <!-- Table row -->
@@ -200,38 +150,87 @@
                       <table class="table datatable-RWDcard text-center">
                         <thead>
                           <tr class="tr-only-hide">
-                            <th nowrap>公司代碼</th>
-                            <th nowrap>公司名稱</th>
-                            <th nowrap>統一編號</th>
-                            <th nowrap>郵遞區號</th>
-                            <th nowrap>公司地址</th>
-                            <th nowrap>負責人</th>
+                            <th>
+                              <input type="button" class="btn jess-btn-add js-addList-Btn" data-area="salesArea" value="+">
+                            </th>
+                            <th nowrap>業務員編號</th>
+                            <th nowrap>業務中文姓名</th>
+                            <th nowrap>業務英文姓名</th>
+                            <th nowrap>狀態</th>
+                            <th nowrap>職稱</th>
+                            <th nowrap>主管員編號</th>
+                            <th nowrap>姓名</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="js-itemArea">
                           <tr>
-                            <td data-th="公司代碼" nowrap>AC-004765</td>
-                            <td data-th="公司名稱" nowrap>LG_2022_Q1_Mar-Apr_VCC Campaign</td>
-                            <td data-th="統一編號" nowrap>44375678</td>
-                            <td data-th="郵遞區號" nowrap>106</td>
-                            <td data-th="公司地址" nowrap>台北市信義區</td>
-                            <td data-th="負責人" nowrap>陳ＯＯ</td>
+                            <td nowrap></td>
+                            <td data-th="業務員編號" nowrap><input type="text" class="form-control form-control-sm" value="00123"></td>
+                            <td data-th="業務中文姓名" nowrap><input type="text" class="form-control form-control-sm" value="陳ＯＯ"></td>
+                            <td data-th="業務英文姓名" nowrap><input type="text" class="form-control form-control-sm" value="Jason"></td>
+                            <td data-th="狀態" style="width: 10%;" nowrap>
+                              <select class="form-select form-select-sm select2">
+                                <option selected>在職</option>
+                                <option>離職</option>
+                              </select>
+                            </td>
+                            <td data-th="職稱" style="width: 10%;" nowrap>
+                              <select class="form-select form-select-sm select2">
+                                <option selected>員工</option>
+                                <option>主管</option>
+                              </select>
+                            </td>
+                            <td data-th="主管員編號" nowrap>
+                              <input type="text" class="form-control form-control-sm" value="AX0058"></td>
+                            <td data-th="姓名" nowrap>
+                              <input type="text" class="form-control form-control-sm" value="陳ＯＯ">
+                            </td>
                           </tr>
                           <tr>
-                            <td data-th="公司代碼" nowrap>AD-006789</td>
-                            <td data-th="公司名稱" nowrap>合利他命_2022_Q1_Mar-Apr_VCC Campaign</td>
-                            <td data-th="統一編號" nowrap>88731234</td>
-                            <td data-th="郵遞區號" nowrap>106</td>
-                            <td data-th="公司地址" nowrap>台北市信義區</td>
-                            <td data-th="負責人" nowrap>陳ＯＯ</td>
+                            <td nowrap></td>
+                            <td data-th="業務員編號" nowrap><input type="text" class="form-control form-control-sm" value="00456"></td>
+                            <td data-th="業務中文姓名" nowrap><input type="text" class="form-control form-control-sm" value="林ＯＯ"></td>
+                            <td data-th="業務英文姓名" nowrap><input type="text" class="form-control form-control-sm" value="Annie"></td>
+                            <td data-th="狀態" nowrap>
+                              <select class="form-select form-select-sm select2">
+                                <option selected>在職</option>
+                                <option>離職</option>
+                              </select>
+                            </td>
+                            <td data-th="職稱" nowrap>
+                              <select class="form-select form-select-sm select2">
+                                <option >員工</option>
+                                <option selected>主管</option>
+                              </select>
+                            </td>
+                            <td data-th="主管員編號" nowrap>
+                              <input type="text" class="form-control form-control-sm" value="AX0058"></td>
+                            <td data-th="姓名" nowrap>
+                              <input type="text" class="form-control form-control-sm" value="陳ＯＯ">
+                            </td>
                           </tr>
                           <tr>
-                            <td data-th="公司代碼" nowrap>AD-006789</td>
-                            <td data-th="公司名稱" nowrap>合利他命_2022_Q1_Mar-Apr_VCC Campaign</td>
-                            <td data-th="統一編號" nowrap>88731234</td>
-                            <td data-th="郵遞區號" nowrap>106</td>
-                            <td data-th="公司地址" nowrap>台北市信義區</td>
-                            <td data-th="負責人" nowrap>陳ＯＯ</td>
+                            <td nowrap></td>
+                            <td data-th="業務員編號" nowrap><input type="text" class="form-control form-control-sm" value="08766"></td>
+                            <td data-th="業務中文姓名" nowrap><input type="text" class="form-control form-control-sm" value="陳ＯＯ"></td>
+                            <td data-th="業務英文姓名" nowrap><input type="text" class="form-control form-control-sm" value="Chris"></td>
+                            <td data-th="狀態" nowrap>
+                              <select class="form-select form-select-sm select2">
+                                <option >在職</option>
+                                <option selected>離職</option>
+                              </select>
+                            </td>
+                            <td data-th="職稱" nowrap>
+                              <select class="form-select form-select-sm select2">
+                                <option selected>員工</option>
+                                <option>主管</option>
+                              </select>
+                            </td>
+                            <td data-th="主管員編號" nowrap>
+                              <input type="text" class="form-control form-control-sm" value="AX0058"></td>
+                            <td data-th="姓名" nowrap>
+                              <input type="text" class="form-control form-control-sm" value="陳ＯＯ">
+                            </td>
                           </tr>
                         </tbody>
                       </table>
@@ -240,7 +239,7 @@
                   </div>
                 </div>
                 <!-- /.row -->
-        
+
                 <!-- this row will not appear when printing -->
               </div>
               <!-- /.invoice -->
@@ -283,8 +282,9 @@
   <!-- AdminLTE App -->
   <script src="../../dist/js/adminlte.min.js"></script>
   <!-- custom -->
-  <script src="../../dist/js/component.js"></script>
   <script src="../../dist/js/menu.js"></script>
+  <script src="../../dist/js/component.js"></script>
+  <script src="../../dist/js/create.js"></script>
   <!-- Page specific script -->
 </body>
 

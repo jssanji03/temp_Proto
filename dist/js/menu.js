@@ -15,49 +15,73 @@ const sidebar = () => {
                 <li class="nav-item">
                   <a href="index.html" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
-                    <p>master</p>
+                    <p>公司</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="customer.html" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Customer</p>
+                    <p>客戶</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="salse.html" class="nav-link ">
+                  <a href="sales.html" class="nav-link ">
                     <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Sales</p>
+                    <p>業務員</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="products.html" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Products</p>
+                    <p>產品主檔</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="salseBudget.html" class="nav-link ">
+                  <a href="salesBudget.html" class="nav-link ">
                     <i class="fas fa-user-alt nav-icon"></i>
-                    <p>SalesBudget</p>
+                    <p>預算管理</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="salesBudgetClose.html" class="nav-link ">
+                    <i class="fas fa-user-alt nav-icon"></i>
+                    <p>預算管理鎖定</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="salesForecast.html" class="nav-link ">
+                    <i class="fas fa-user-alt nav-icon"></i>
+                    <p>預估管理</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="salesForecastClose.html" class="nav-link ">
+                    <i class="fas fa-user-alt nav-icon"></i>
+                    <p>預估管理鎖定</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="productsItem.html" class="nav-link ">
                     <i class="fas fa-user-alt nav-icon"></i>
-                    <p>ProductsItem</p>
+                    <p>料號對應表</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="otherProducts.html" class="nav-link ">
                     <i class="fas fa-user-alt nav-icon"></i>
-                    <p>裕利產品</p>
+                    <p>產品組合對應表</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="salesInfo.html" class="nav-link ">
                     <i class="fas fa-user-alt nav-icon"></i>
-                    <p>salesInfo</p>
+                    <p>預算資料上傳</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="todo.html" class="nav-link ">
+                    <i class="fas fa-user-alt nav-icon"></i>
+                    <p>代辦事項</p>
                   </a>
                 </li>
               </ul>

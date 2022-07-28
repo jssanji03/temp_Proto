@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Invoice</title>
+  <title>SalesBudget</title>
 
 
   <!-- Theme style -->
@@ -48,67 +48,6 @@
       <div class="sidebar">
         <!-- Sidebar Menu -->
         <nav class="mt-2" id="sidebar-wrapper">
-          <!-- <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <li class="nav-item menu-open">
-              <a href="#" class="nav-link active">
-                <i class="nav-icon far fa-circle"></i>
-                <p>
-                  Master
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="index.html" class="nav-link">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>master</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="customer.html" class="nav-link">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Customer</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="salse.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Sales</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="products.html" class="nav-link">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Products</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="salseBudget.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>SalesBudget</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="productsItem.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>ProductsItem</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="otherProducts.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>裕利產品</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./salesInfo.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>salesInfo</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul> -->
         </nav>
         <!-- /.sidebar-menu -->
       </div>
@@ -122,18 +61,18 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>公司</h1>
+              <h1>預算管理鎖定</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">公司</li>
+                <li class="breadcrumb-item active">預算管理鎖定</li>
               </ol>
             </div>
           </div>
         </div><!-- /.container-fluid -->
       </section>
-    
+
       <section class="content">
         <div class="container-fluid">
           <div class="row">
@@ -153,29 +92,26 @@
                     <div class="col-sm-3">
                       <!-- select -->
                       <div class="form-group">
-                        <label>公司代碼</label>
-                        <input type="text" class="form-control form-control-sm" value="ABSOLUTE">
+                        <label>鎖定年月</label>
+                        <input type="date" class="form-control form-control-sm" value="ABSOLUTE">
                       </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                       <!-- select -->
                       <div class="form-group">
-                        <label>公司名稱</label>
-                        <input type="text" class="form-control form-control-sm" value="股份有限公司">
-                      </div>
-                    </div>
-                    <div class="col-sm-3">
-                      <!-- select -->
-                      <div class="form-group">
-                        <label>統一編號</label>
-                        <input type="text" class="form-control form-control-sm" value="12347654">
+                        <label for="formFile">預算版本</label>
+                        <select class="form-select form-select-sm">
+                          <option selected>V01</option>
+                          <option>V02</option>
+                        </select>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- /.card-body -->
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-secondary float-right">Search</button>
+                <div class="card-footer justify-content-end">
+                  <button type="submit" class="btn btn-secondary float-end">Search</button>
+                  <button type="submit" class="btn btn-warning mx-2 float-end">下載</button>
                 </div>
                 <!-- /.card-footer -->
               </div>
@@ -200,38 +136,26 @@
                       <table class="table datatable-RWDcard text-center">
                         <thead>
                           <tr class="tr-only-hide">
-                            <th nowrap>公司代碼</th>
-                            <th nowrap>公司名稱</th>
-                            <th nowrap>統一編號</th>
-                            <th nowrap>郵遞區號</th>
-                            <th nowrap>公司地址</th>
-                            <th nowrap>負責人</th>
+                            <th nowrap>年月</th>
+                            <th nowrap>版本</th>
+                            <th nowrap>狀態</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td data-th="公司代碼" nowrap>AC-004765</td>
-                            <td data-th="公司名稱" nowrap>LG_2022_Q1_Mar-Apr_VCC Campaign</td>
-                            <td data-th="統一編號" nowrap>44375678</td>
-                            <td data-th="郵遞區號" nowrap>106</td>
-                            <td data-th="公司地址" nowrap>台北市信義區</td>
-                            <td data-th="負責人" nowrap>陳ＯＯ</td>
+                            <td data-th="DateSkey" nowrap>202202</td>
+                            <td data-th="CustSkey" nowrap>v1</td>
+                            <td data-th="SlpSkey" nowrap>Closed</td>
                           </tr>
                           <tr>
-                            <td data-th="公司代碼" nowrap>AD-006789</td>
-                            <td data-th="公司名稱" nowrap>合利他命_2022_Q1_Mar-Apr_VCC Campaign</td>
-                            <td data-th="統一編號" nowrap>88731234</td>
-                            <td data-th="郵遞區號" nowrap>106</td>
-                            <td data-th="公司地址" nowrap>台北市信義區</td>
-                            <td data-th="負責人" nowrap>陳ＯＯ</td>
+                            <td data-th="DateSkey" nowrap>202202</td>
+                            <td data-th="CustSkey" nowrap>v2</td>
+                            <td data-th="SlpSkey" nowrap>Open</td>
                           </tr>
                           <tr>
-                            <td data-th="公司代碼" nowrap>AD-006789</td>
-                            <td data-th="公司名稱" nowrap>合利他命_2022_Q1_Mar-Apr_VCC Campaign</td>
-                            <td data-th="統一編號" nowrap>88731234</td>
-                            <td data-th="郵遞區號" nowrap>106</td>
-                            <td data-th="公司地址" nowrap>台北市信義區</td>
-                            <td data-th="負責人" nowrap>陳ＯＯ</td>
+                            <td data-th="DateSkey" nowrap>202203</td>
+                            <td data-th="CustSkey" nowrap>v1</td>
+                            <td data-th="SlpSkey" nowrap>Closed</td>
                           </tr>
                         </tbody>
                       </table>
@@ -240,7 +164,7 @@
                   </div>
                 </div>
                 <!-- /.row -->
-        
+
                 <!-- this row will not appear when printing -->
               </div>
               <!-- /.invoice -->
@@ -283,8 +207,8 @@
   <!-- AdminLTE App -->
   <script src="../../dist/js/adminlte.min.js"></script>
   <!-- custom -->
-  <script src="../../dist/js/component.js"></script>
   <script src="../../dist/js/menu.js"></script>
+  <script src="../../dist/js/component.js"></script>
   <!-- Page specific script -->
 </body>
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sales</title>
+  <title>Invoice</title>
 
 
   <!-- Theme style -->
@@ -48,67 +48,6 @@
       <div class="sidebar">
         <!-- Sidebar Menu -->
         <nav class="mt-2" id="sidebar-wrapper">
-          <!-- <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <li class="nav-item menu-open">
-              <a href="#" class="nav-link active">
-                <i class="nav-icon far fa-circle"></i>
-                <p>
-                  Master
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="./index.html" class="nav-link">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>master</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./customer.html" class="nav-link">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Customer</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./salse.html" class="nav-link active">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Sales</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./products.html" class="nav-link">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>Products</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./salseBudget.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>SalesBudget</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./productsItem.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>ProductsItem</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./otherProducts.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>裕利產品</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./salesInfo.html" class="nav-link ">
-                    <i class="fas fa-user-alt nav-icon"></i>
-                    <p>salesInfo</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul> -->
         </nav>
         <!-- /.sidebar-menu -->
       </div>
@@ -122,15 +61,72 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Sales</h1>
+              <h1>代辦事項</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Sales</li>
+                <li class="breadcrumb-item active">代辦事項</li>
               </ol>
             </div>
           </div>
+        </div><!-- /.container-fluid -->
+      </section>
+    
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <!-- Main content -->
+              <div class="card mb-3">
+                <div class="card-header">
+                  <h3 class="card-title">Sales Forecast </h3>
+                </div>
+                <div class="card-body">
+                  <!-- Table row -->
+                  <div class="row mt-2">
+                    <div class="col-12 table-responsive">
+                      <table class="table datatable-RWDcard text-center">
+                        <thead>
+                          <tr class="tr-only-hide">
+                            <th nowrap>業務員</th>
+                            <th nowrap>預算版本</th>
+                            <th nowrap>檔案下載</th>
+                            <th nowrap>決議</th>                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-th="業務員" nowrap>Kerry</td>
+                            <td data-th="預算版本" nowrap>v1</td>
+                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
+                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
+                          </tr>
+                          <tr>
+                            <td data-th="業務員" nowrap>Sophia</td>
+                            <td data-th="預算版本" nowrap>v1</td>
+                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
+                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
+                          </tr>
+                          <tr>
+                            <td data-th="業務員" nowrap>Ben</td>
+                            <td data-th="預算版本" nowrap>v1</td>
+                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
+                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                </div>
+                <!-- /.row -->
+        
+                <!-- this row will not appear when printing -->
+              </div>
+              <!-- /.invoice -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
         </div><!-- /.container-fluid -->
       </section>
 
@@ -141,7 +137,7 @@
               <!-- Main content -->
               <div class="card mb-3">
                 <div class="card-header">
-                  <h3 class="card-title my-1"> Result</h3>
+                  <h3 class="card-title">Sales Budget</h3>
                 </div>
                 <div class="card-body">
                   <!-- Table row -->
@@ -150,41 +146,30 @@
                       <table class="table datatable-RWDcard text-center">
                         <thead>
                           <tr class="tr-only-hide">
-                            <th>
-                              <input type="button" class="btn jess-btn-add js-addList-Btn" data-area="salesArea" value="+">
-                            </th>
-                            <th nowrap>業務員編號</th>
-                            <th nowrap>業務中文姓名</th>
-                            <th nowrap>業務英文姓名</th>
-                            <th nowrap>狀態</th>
-                            <th nowrap>職稱</th>
-                            <th nowrap>主管員編號</th>
-                            <th nowrap>姓名</th>
+                            <th nowrap>業務員</th>
+                            <th nowrap>預算版本</th>
+                            <th nowrap>檔案下載</th>
+                            <th nowrap>決議</th>                           
                           </tr>
                         </thead>
-                        <tbody class="js-itemArea">
+                        <tbody>
                           <tr>
-                            <td nowrap></td>
-                            <td data-th="業務員編號" nowrap><input type="text" class="form-control form-control-sm" value="00123"></td>
-                            <td data-th="業務中文姓名" nowrap><input type="text" class="form-control form-control-sm" value="陳ＯＯ"></td>
-                            <td data-th="業務英文姓名" nowrap><input type="text" class="form-control form-control-sm" value="Jason"></td>
-                            <td data-th="狀態" nowrap>
-                              <select class="form-select form-select-sm select2">
-                                <option selected>在職</option>
-                                <option>離職</option>
-                              </select>
-                            </td>
-                            <td data-th="職稱" nowrap>
-                              <select class="form-select form-select-sm select2">
-                                <option selected>員工</option>
-                                <option>主管</option>
-                              </select>
-                            </td>
-                            <td data-th="主管員編號" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="AX0058"></td>
-                            <td data-th="姓名" nowrap>
-                              <input type="text" class="form-control form-control-sm" value="陳ＯＯ">
-                            </td>
+                            <td data-th="業務員" nowrap>Kerry</td>
+                            <td data-th="預算版本" nowrap>v1</td>
+                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
+                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
+                          </tr>
+                          <tr>
+                            <td data-th="業務員" nowrap>Sophia</td>
+                            <td data-th="預算版本" nowrap>v1</td>
+                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
+                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
+                          </tr>
+                          <tr>
+                            <td data-th="業務員" nowrap>Ben</td>
+                            <td data-th="預算版本" nowrap>v1</td>
+                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
+                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
                           </tr>
                         </tbody>
                       </table>
@@ -193,7 +178,7 @@
                   </div>
                 </div>
                 <!-- /.row -->
-
+        
                 <!-- this row will not appear when printing -->
               </div>
               <!-- /.invoice -->
@@ -238,7 +223,7 @@
   <!-- custom -->
   <script src="../../dist/js/menu.js"></script>
   <script src="../../dist/js/component.js"></script>
-  <script src="../../dist/js/create.js"></script>
+  <script src="../../dist/js/index.js"></script>
   <!-- Page specific script -->
 </body>
 
