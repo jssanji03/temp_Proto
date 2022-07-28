@@ -36,6 +36,29 @@ const sidebar = () => {
                   </a>
                 </li>
                 <li class="nav-item">
+                  <a href="productsItem.html" class="nav-link ">
+                    <i class="fas fa-file-alt nav-icon"></i>
+                    <p>料號對應表</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="otherProducts.html" class="nav-link ">
+                    <i class="fas fa-file-alt nav-icon"></i>
+                    <p>產品組合對應表</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-menu">
+                <i class="nav-icon far fa-circle"></i>
+                <p>
+                  業務規劃
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+              <li class="nav-item">
                   <a href="salesBudget.html" class="nav-link ">
                     <i class="fas fa-money-check-alt nav-icon"></i>
                     <p>預算管理</p>
@@ -60,50 +83,9 @@ const sidebar = () => {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="productsItem.html" class="nav-link ">
-                    <i class="fas fa-file-alt nav-icon"></i>
-                    <p>料號對應表</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="otherProducts.html" class="nav-link ">
-                    <i class="fas fa-file-alt nav-icon"></i>
-                    <p>產品組合對應表</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link nav-menu">
-                <i class="nav-icon far fa-circle"></i>
-                <p>
-                  業務規劃
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-money-check-alt nav-icon"></i>
-                    <p>預算資料下載 </p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="salesInfo.html" class="nav-link">
-                    <i class="fas fa-money-check-alt nav-icon"></i>
-                    <p>預算資料上傳</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-chart-line nav-icon"></i>
-                    <p>預測資料下載</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-chart-line nav-icon"></i>
-                    <p>預測資料上傳</p>
+                  <a href="todo.html" class="nav-link ">
+                    <i class="fas fa-calendar-check nav-icon"></i>
+                    <p>代辦事項</p>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -112,12 +94,7 @@ const sidebar = () => {
                     <p>期間鎖定</p>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a href="todo.html" class="nav-link ">
-                    <i class="fas fa-calendar-check nav-icon"></i>
-                    <p>代辦事項</p>
-                  </a>
-                </li>
+                
               </ul>
             </li>
           </ul>
@@ -131,8 +108,8 @@ sidebar()
 
 $(function () {
   const pathname = window.location.pathname.split('/');
-  const currentURL = pathname[pathname.length-1]
-  console.log(pathname[pathname.length-1]);
+  const currentURL = pathname[pathname.length - 1]
+  // salesInfo.html
   $(".nav-sidebar li a.nav-link").each( function() {
     const href = $(this).attr("href");
     if (href === currentURL) {
