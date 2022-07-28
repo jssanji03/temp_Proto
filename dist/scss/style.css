@@ -11509,6 +11509,10 @@ label {
   margin: 5px 0px;
 }
 
+.input-group-text {
+  height: 31px;
+}
+
 .select2-container--bootstrap4 .select2-selection--single, .select2-container .select2-selection--single, .select2-container--default .select2-selection--multiple {
   height: 30px !important;
   border: 1px solid #ccc !important;

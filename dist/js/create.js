@@ -18,7 +18,6 @@ function addTemplate(e) {
         let str = `
         <tr>
         <td nowrap> 
-           
           </td>
           <td data-th="公司代碼" nowrap> 
             <input type="text" class="form-control form-control-sm">

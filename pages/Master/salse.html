@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Customer</title>
+  <title>Sales</title>
 
 
   <!-- Theme style -->
@@ -60,19 +60,19 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link active">
+                  <a href="./index.html" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>master</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="./customer.html" class="nav-link">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>Customer</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link ">
+                  <a href="./salse.html" class="nav-link active">
                     <i class="fas fa-user-alt nav-icon"></i>
                     <p>Sales</p>
                   </a>
@@ -99,12 +99,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Customer</h1>
+              <h1>Sales</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Customer</li>
+                <li class="breadcrumb-item active">Sales</li>
               </ol>
             </div>
           </div>
@@ -127,30 +127,28 @@
                       <table class="table datatable-RWDcard text-center">
                         <thead>
                           <tr class="tr-only-hide">
-                            <th nowrap>客戶代碥</th>
-                            <th nowrap>客戶名稱</th>
-                            <th nowrap>統一編號</th>
-                            <th nowrap>郵遞區號</th>
-                            <th nowrap>公司地址</th>
-                            <th nowrap>負責人</th>
-                            <th nowrap>銷售組織代碼與名稱</th>
-                            <th nowrap>通路代碼與名稱</th>
-                            <th nowrap>區域代碼與名稱</th>
-                            <th nowrap>業務員</th>
+                            <th>
+                              <input type="button" class="btn jess-btn-add js-addList-Btn" data-area="itemArea" value="+">
+                            </th>
+                            <th nowrap>業務員編號</th>
+                            <th nowrap>業務中文姓名</th>
+                            <th nowrap>業務英文姓名</th>
+                            <th nowrap>狀態</th>
+                            <th nowrap>職稱</th>
+                            <th nowrap>主管員編號</th>
+                            <th nowrap>姓名</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="js-itemArea">
                           <tr>
-                            <td data-th="公司代碼" nowrap>AC-004765</td>
-                            <td data-th="公司名稱" nowrap>LG_2022_Q1_Mar-Apr_VCC Campaign</td>
-                            <td data-th="統一編號" nowrap>44375678</td>
-                            <td data-th="郵遞區號" nowrap>106</td>
-                            <td data-th="公司地址" nowrap>台北市信義區</td>
-                            <td data-th="負責人" nowrap>陳ＯＯ</td>
-                            <td data-th="銷售組織代碼與名稱" nowrap>AX0058</td>
-                            <td data-th="通路代碼與名稱" nowrap>BC</td>
-                            <td data-th="區域代碼與名稱" nowrap>235</td>
-                            <td data-th="業務員" nowrap>陳ＯＯ</td>
+                            <td nowrap></td>
+                            <td data-th="業務員編號" nowrap>AC-004765</td>
+                            <td data-th="業務中文姓名" nowrap>LG_2022_Q1_Mar-Apr_VCC Campaign</td>
+                            <td data-th="業務英文姓名" nowrap>44375678</td>
+                            <td data-th="狀態" nowrap>106</td>
+                            <td data-th="職稱" nowrap>台北市信義區</td>
+                            <td data-th="主管員編號" nowrap>陳ＯＯ</td>
+                            <td data-th="姓名" nowrap>AX0058</td>
                           </tr>
                         </tbody>
                       </table>
