@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Invoice</title>
+  <title>期間鎖定</title>
 
 
   <!-- Theme style -->
@@ -36,7 +36,7 @@
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4" id="sidebar-wrapper">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4"  id="sidebar-wrapper">
       <!-- Brand Logo -->
       <!-- /.sidebar -->
     </aside>
@@ -48,72 +48,15 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>代辦事項</h1>
+              <h1>期間鎖定</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">代辦事項</li>
+                <li class="breadcrumb-item active">期間鎖定</li>
               </ol>
             </div>
           </div>
-        </div><!-- /.container-fluid -->
-      </section>
-    
-      <section class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              <!-- Main content -->
-              <div class="card mb-3">
-                <div class="card-header">
-                  <h3 class="card-title">Sales Forecast </h3>
-                </div>
-                <div class="card-body">
-                  <!-- Table row -->
-                  <div class="row mt-2">
-                    <div class="col-12 table-responsive">
-                      <table class="table datatable-RWDcard text-center">
-                        <thead>
-                          <tr class="tr-only-hide">
-                            <th nowrap>業務員</th>
-                            <th nowrap>預算版本</th>
-                            <th nowrap>檔案下載</th>
-                            <th nowrap>決議</th>                           
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td data-th="業務員" nowrap>Kerry</td>
-                            <td data-th="預算版本" nowrap>v1</td>
-                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
-                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
-                          </tr>
-                          <tr>
-                            <td data-th="業務員" nowrap>Sophia</td>
-                            <td data-th="預算版本" nowrap>v1</td>
-                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
-                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
-                          </tr>
-                          <tr>
-                            <td data-th="業務員" nowrap>Ben</td>
-                            <td data-th="預算版本" nowrap>v1</td>
-                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
-                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <!-- /.col -->
-                  </div>
-                </div>
-                <!-- /.row -->
-        
-                <!-- this row will not appear when printing -->
-              </div>
-              <!-- /.invoice -->
-            </div><!-- /.col -->
-          </div><!-- /.row -->
         </div><!-- /.container-fluid -->
       </section>
 
@@ -121,10 +64,57 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-12">
+              <div class="card">
+                <div class="card-header Soe_searchBg">
+                  <h3 class="card-title text-primary m-0">Search</h3>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label>鎖定年月</label>
+                        <input type="date" class="form-control form-control-sm" value="ABSOLUTE">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <!-- select -->
+                      <div class="form-group">
+                        <label for="formFile">預算版本</label>
+                        <select class="form-select form-select-sm">
+                          <option selected>V01</option>
+                          <option>V02</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer justify-content-end">
+                  <button type="submit" class="btn btn-secondary float-end">Search</button>
+                  <button type="submit" class="btn btn-warning mx-2 float-end">下載</button>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
               <!-- Main content -->
               <div class="card mb-3">
                 <div class="card-header">
-                  <h3 class="card-title">Sales Budget</h3>
+                  <h3 class="card-title">Search Result</h3>
                 </div>
                 <div class="card-body">
                   <!-- Table row -->
@@ -133,30 +123,26 @@
                       <table class="table datatable-RWDcard text-center">
                         <thead>
                           <tr class="tr-only-hide">
-                            <th nowrap>業務員</th>
-                            <th nowrap>預算版本</th>
-                            <th nowrap>檔案下載</th>
-                            <th nowrap>決議</th>                           
+                            <th nowrap>年月</th>
+                            <th nowrap>版本</th>
+                            <th nowrap>狀態</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td data-th="業務員" nowrap>Kerry</td>
-                            <td data-th="預算版本" nowrap>v1</td>
-                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
-                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
+                            <td data-th="DateSkey" nowrap>202202</td>
+                            <td data-th="CustSkey" nowrap>v1</td>
+                            <td data-th="SlpSkey" nowrap>Closed</td>
                           </tr>
                           <tr>
-                            <td data-th="業務員" nowrap>Sophia</td>
-                            <td data-th="預算版本" nowrap>v1</td>
-                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
-                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
+                            <td data-th="DateSkey" nowrap>202202</td>
+                            <td data-th="CustSkey" nowrap>v2</td>
+                            <td data-th="SlpSkey" nowrap>Open</td>
                           </tr>
                           <tr>
-                            <td data-th="業務員" nowrap>Ben</td>
-                            <td data-th="預算版本" nowrap>v1</td>
-                            <td data-th="檔案下載" nowrap><a href="#">下載</a></td>
-                            <td data-th="決議" nowrap><input type="button" value="同意" /> <input type="button" value="駁回" /></td>                            
+                            <td data-th="DateSkey" nowrap>202203</td>
+                            <td data-th="CustSkey" nowrap>v1</td>
+                            <td data-th="SlpSkey" nowrap>Closed</td>
                           </tr>
                         </tbody>
                       </table>
@@ -165,7 +151,7 @@
                   </div>
                 </div>
                 <!-- /.row -->
-        
+
                 <!-- this row will not appear when printing -->
               </div>
               <!-- /.invoice -->
@@ -210,7 +196,6 @@
   <!-- custom -->
   <script src="../../dist/js/menu.js"></script>
   <script src="../../dist/js/component.js"></script>
-  <script src="../../dist/js/index.js"></script>
   <!-- Page specific script -->
 </body>
 

@@ -1,7 +1,13 @@
 const sidebarArea = document.querySelector('#sidebar-wrapper')
 const sidebar = () => {
-    let template = `
-    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+  let template = `
+    <a href="#" class="brand-link">
+      <img src="../../dist/img/logo.gif" alt="AdminLTE Logo" class="brand-image img-circle">
+      <span class="brand-text">合利他命</span>
+    </a>
+    <div class="sidebar">
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
               <a href="#" class="nav-link nav-menu">
                 <i class="nav-icon far fa-circle"></i>
@@ -89,7 +95,7 @@ const sidebar = () => {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="setRangeClose.html" class="nav-link">
                     <i class="fas fa-unlock nav-icon"></i>
                     <p>期間鎖定</p>
                   </a>
@@ -98,6 +104,9 @@ const sidebar = () => {
               </ul>
             </li>
           </ul>
+        </nav>
+    </div>
+   
     `
   // sidebarArea.forEach((x) => {
     
