@@ -2,7 +2,7 @@ const sidebarArea = document.querySelector('#sidebar-wrapper')
 const sidebar = () => {
   let template = `
     <a href="#" class="brand-link">
-      <img src="../../dist/img/logo.gif" alt="AdminLTE Logo" class="brand-image img-circle">
+      <img src="../../dist/img/logo.gif" alt="AdminLTE Logo" class="mx-2 brand-image img-circle">
       <span class="brand-text">合利他命</span>
     </a>
     <div class="sidebar">
